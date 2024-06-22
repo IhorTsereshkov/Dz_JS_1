@@ -36,12 +36,14 @@
 // const step = prompt("Введите степень");
 // console.log(number ** step);
 
-// //Заадание 4
+//Заадание 4
 // let a = "some text";
-// if (a == "some text") {
-//   console.log((a = "another text"));
+// if ((a = "some text")) {
+//   a = "another text";
+//   console.log(a);
 // } else {
-//   console.log((a = "some text"));
+//   a = "some text";
+//   console.log(a);
 // }
 
 // //Заадание 5
@@ -55,12 +57,14 @@
 // }
 
 // //Заадание 6
-// const numb = prompt("Введите число");
+// const numb = +prompt("Введите число");
 // let result;
 // if (numb < 5) {
-//   console.log((result = "0"));
+//   result = "0";
+//   console.log(result);
 // } else if (numb > 5) {
-//   console.log((result = "1"));
+//   result = "1";
+//   console.log(result);
 // }
 
 // //Заадание 7
@@ -98,24 +102,32 @@
 // //Заадание 10
 // const numb = +prompt("Бал за экзамен: ");
 // const project = +prompt("Количество выполненных проектов: ");
-// if (numb >= 90 && project >= 10) {
+// if (numb > 90 && numb <= 100 && project > 10) {
 //   console.log("100 баллов");
-// } else if (numb >= 75 && project >= 5) {
+// } else if (numb >= 75 && numb <= 90 && project >= 5) {
 //   console.log("90 баллов");
-// } else if (numb >= 50 && project >= 2) {
+// } else if (numb > 50 && project >= 2) {
 //   console.log("75 баллов");
 // } else {
 //   console.log("0 баллов");
 // }
 
 // //Заадание 11
-const day = +prompt("Количество дней аренды автомобиля: ");
-if (day >= 7) {
-  alert("Стоимость аренды составит: " + (day * 40 - 50) + "$");
-} else if (day >= 3 && day < 7) {
-  alert("Стоимость аренды составит: " + (day * 40 - 20) + "$");
-} else if (day < 3 && day > 0) {
-  alert("Стоимость аренды составит: " + day * 40 + "$");
-} else {
-  alert("Введите число больше 0");
+// const day = +prompt("Количество дней аренды автомобиля: ");
+// if (day >= 7) {
+//   alert("Стоимость аренды составит: " + (day * 40 - 50) + "$");
+// } else if (day >= 3 && day < 7) {
+//   alert("Стоимость аренды составит: " + (day * 40 - 20) + "$");
+// } else if (day < 3 && day > 0) {
+//   alert("Стоимость аренды составит: " + day * 40 + "$");
+// } else {
+//   alert("Введите число больше 0");
+// }
+
+const numb = +prompt("Введите число: ");
+
+for (let i = 0; i < 5; i++) {
+  if (numb === 10) {
+    console.log("Равно 10");
+  } else console.log("Не равно 10");
 }
